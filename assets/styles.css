@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../images/bg.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    height: 100vh;
+    background-color: #1e1f23;
+    font-family: "Poppins", sans-serif; 
+    font-weight: normal;
+    color: #fff;
+}
+
+.container{
+    width: 76.5vw;
+    height: 200vh;
+    margin: 0 auto;
+}
+
+
+/* ===== Header =====*/
+
+header{
+    height: 27vh;
+    margin-top: 1.2em;
+}
+
+.header__body{
+    padding: 5.3em;
+    text-align: center;
+    line-height: 2.3rem;
+ }
+
+.header__title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0px;
+    font-size: 44pt;
+}
+
+.header__subtitle{
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+
+/* ==== Main ==== */
+
+main{
+    box-shadow: 0px 0px 16px -2px #000;
+}
+.main__bg{
+    width: 100%;
+    display: block;
+}
+
+
+/* ==== Article ==== */
+
+.article{
+    background: #f4f4f4;
+}
+
+.article__container{
+    padding: 5.6em;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+}
+.article__container p:first-child{  
+    padding-bottom:2em;
+}
+
+.section-header{
+    height: 12em;
+    background: #fff;
+    color: #1e1f23;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__title{
+    font-size: 26px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.section__title:after{
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: -13px;
+    width: 4.5em;
+    height: 1px;
+    
+    transform: translateX(-50%);
+    background:rgba(0, 0, 0, 0.125);
+}
+
+.section__subtitle{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:#bbb;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 25px;
+}
+
+
+/* ==== Gallery ==== */
+
+.gallery{
+    background: #1e1f23;
+}
+
+.gallery__container{
+    padding: 5.6em;
+
+}
+.gallery__box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery__box img{
+    display: block;
+    cursor: pointer;
+    flex: 0 0 50%;
+}
+
+.section-header_dark{
+    border-radius: 5px;
+    background: #121315;
+    height: 19vh;
+}
+
+.section__title_dark{
+    color:#fff;
+}
+
+.section__title_dark:after{
+    background: #303132;
+    width: 3.8em;
+}
+
+.section__subtitle_dark{
+    color: #454639;
+}
+
+
+/* ==== Caption ==== */
+.caption{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caption-block{
+    background: #f5f5f4;
+    text-align: left;
+    height: inherit;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+    width: 50%;
+}
+
+.caption-block__inner{
+    margin: 5.5em;
+}
+
+.caption__img{
+    display: block;
+    width: 50%;
+    height: 100%;
+    
+}
+
+.caption-block h1{
+    color: #1e1f23;
+    font-size: 20px; 
+}
+
+.caption-block p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 11pt;
+    margin-top: 15px;
+    font-weight: 300;
+    
+}
+
+.caption-block__wrap_black{
+    display: flex;
+}
+
+.caption-block_black{
+    order: -1;
+    text-align: right;
+    background: #1e1f23;
+}
+
+#caption-block__text_dark{
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.caption-block_black h1{
+    color: #fff;
+}
+.caption-block_black p{
+    color: #565045;
+}
+
+
+/* === Footer === */
+
+.footer__social{
+    margin-top: 70px;
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.footer__social svg{
+    width: 48px;
+    height: 36px;
+    fill: #c6c7c8;
+}
+.footer__social svg:hover{
+    fill:#fff;
+}
+
+.footer__copyright{
+    font-weight: 100;
+    font-size: 14px;
+    color: #c6c7c8;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer__copyright a{
+    color:  #c6c7c8;
+}
+
+
+/* === Modal === */
+
+.modal{
+    width: 40vw;
+
+    border:10px solid #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation-name: "fadeIn";
+    animation-duration:.8s;
+    cursor: pointer;
+}
+
+.modal__img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.modal-wrap{
+    width: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    animation-name: "fadeInBg";
+    animation-duration:.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn{
+    0%{
+        width: 0vw;
+    }
+    100%{
+        width: 40vw;
+    }
+}
+
+
+@keyframes fadeInBg{
+    100%{
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+@keyframes fadeOutBg{
+    0%{
+        background-color: rgba(0, 0, 0, 0.6); 
+    }
+    100%{
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
